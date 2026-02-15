@@ -7,6 +7,7 @@ import Hero from './components/hero/hero'
 import AboutMe from './components/aboutMe/about'
 import Skills from './components/skills/skills'
 import Projects from './components/projects/projects'
+import Contact from './components/contact/contact'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
@@ -15,5 +16,6 @@ createRoot(document.getElementById('root')).render(
     <AboutMe />
     <Skills />
     <Projects />
+    <Contact />
   </ThemeProvider>
 )

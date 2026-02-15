@@ -60,6 +60,7 @@
   --back-start-color: oklch(97.7% 0.014 308.299);
   --back-end-color: oklch(97% 0.014 254.604);
   --skills-bg: oklch(92.8% 0.006 264.531);
+  --header-color: #ffffffae;
 }
 
 [data-theme='dark'] {
@@ -75,6 +76,7 @@
   --back-start-color: oklch(27.8% 0.033 256.848);
   --back-end-color: oklch(27.8% 0.033 256.848);
   --skills-bg: oklch(37.3% 0.034 259.733);
+  --header-color: oklch(27.8% 0.033 256.848 / 0.6);
 }
 
 body {

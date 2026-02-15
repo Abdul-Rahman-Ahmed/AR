@@ -8,6 +8,9 @@
     font-size: 18px;
     line-height: 1.55556;
     color: var(--paragraph-color);
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
   .cards {
     display: flex;

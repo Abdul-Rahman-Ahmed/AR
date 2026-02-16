@@ -68,12 +68,15 @@ const Contact = () => {
           <h3>Follow Me</h3>
           <ul className="following">
             <li>
-              <a href="https://github.com/Abdul-Rahman-Ahmed">
+              <a href="https://github.com/Abdul-Rahman-Ahmed" target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/abdul-rahman-ahmed-935881313/">
+              <a
+                href="https://www.linkedin.com/in/https://www.linkedin.com/in/abdul-rahman-ahmed-935881313/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>

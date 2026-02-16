@@ -26,7 +26,7 @@ const Skills = () => {
     { name: 'Figma', category: 'Design' },
   ]
   return (
-    <div className="skills container">
+    <div className="skills container" id="Skills">
       <h1 className="color-bg head-section">Skills & Expertise</h1>
       <h2>Core Technologies</h2>
       <ul className="skills-list">

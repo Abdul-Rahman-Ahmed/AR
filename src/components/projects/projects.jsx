@@ -44,8 +44,8 @@ const Projects = () => {
         'A modern, responsive landing page built using HTML, CSS and Bootstrap. The design features multiple sections such as hero banner with call-to-action buttons',
       tools: ['HTML', 'CSS', 'JS', 'Bootstrap'],
       imgSrc: axit,
-      gitLink: 'https://github.com/Abdul-Rahman-Ahmed/armonia-italia',
-      demo: 'https://abdul-rahman-ahmed.github.io/armonia-italia/dist/',
+      gitLink: 'https://github.com/Abdul-Rahman-Ahmed/AXIT',
+      demo: 'https://abdul-rahman-ahmed.github.io/AXIT',
     },
     {
       name: 'Bondi',

@@ -8,6 +8,7 @@ import AboutMe from './components/aboutMe/about'
 import Skills from './components/skills/skills'
 import Projects from './components/projects/projects'
 import Contact from './components/contact/contact'
+import Footer from './components/footer/footer'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
@@ -17,5 +18,6 @@ createRoot(document.getElementById('root')).render(
     <Skills />
     <Projects />
     <Contact />
+    <Footer />
   </ThemeProvider>
 )

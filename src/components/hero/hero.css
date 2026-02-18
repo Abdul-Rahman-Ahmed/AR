@@ -136,10 +136,10 @@ section {
         }
       }
     }
-    @media (max-width: 425px) {
+    @media (max-width: 500px) {
       button {
-        width: 100%;
-        margin-bottom: 14px;
+        width: calc(100% - 32px * 2);
+        margin: 14px auto 0;
       }
     }
   }

@@ -34,6 +34,7 @@
 
     .form {
       width: 50%;
+      opacity: 0;
       form {
         margin: auto;
         border-radius: 20px;
@@ -82,6 +83,7 @@
 
     .connect {
       width: 50%;
+      opacity: 0;
       h2 {
         font-size: 1.5rem;
         margin-bottom: 12px;

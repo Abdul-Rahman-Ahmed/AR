@@ -8,9 +8,11 @@
       opacity: 1;
     }
   }
+
   h1 {
     opacity: 0;
   }
+
   .details {
     margin: 0 auto 64px;
     text-align: center;
@@ -28,30 +30,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
-    &.show {
-      .card {
-        animation: 0.2s move-down ease-out forwards;
-        &:nth-child(1) {
-          animation-delay: 0.2s;
-        }
-        &:nth-child(2) {
-          animation-delay: 0.4s;
-        }
-        &:nth-child(3) {
-          animation-delay: 0.6s;
-        }
-        &:nth-child(4) {
-          animation-delay: 0.8s;
-        }
-        &:nth-child(5) {
-          animation-delay: 1s;
-        }
-        &:nth-child(6) {
-          animation-delay: 1.2s;
-        }
-      }
-    }
     .card {
+      &.show {
+        animation: 0.2s move-down ease-out forwards;
+      }
       opacity: 0;
       max-width: 470px;
       background-color: var(--bg-color);

@@ -7,18 +7,17 @@ function Animated({ children, className, id }) {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          observer.unobserve(ref.current)
           ref.current.classList.add('show')
         }
       },
-      { threshold: 0.3 }
+      { rootMargin: '0px 0px -300px 0px', threshold: 0 }
     )
-
     observer.observe(ref.current)
 
     return () => observer.disconnect()
   }, [])
 
-  console.log(children)
   return (
     <div ref={ref} className={className} id={id}>
       {children}

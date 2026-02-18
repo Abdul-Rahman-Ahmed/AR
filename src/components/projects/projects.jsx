@@ -87,7 +87,7 @@ const Projects = () => {
       <Animated className="cards">
         {projects.map((el, key) => {
           return (
-            <div className="card" key={key}>
+            <Animated className="card" key={key}>
               <div className="img">
                 <img src={el.imgSrc} alt="img" />
               </div>
@@ -109,7 +109,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </Animated>
           )
         })}
       </Animated>

@@ -5,6 +5,7 @@ footer {
   .main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 50px;
     border-bottom: 2px solid oklch(44.6% 0.03 256.802);
 

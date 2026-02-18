@@ -1,6 +1,24 @@
 .about {
   background-color: var(--stack-bg-color);
 
+  h1 {
+    opacity: 0;
+  }
+  &.show {
+    h1 {
+      animation: 0.5s move-down ease-out;
+      opacity: 1;
+    }
+
+    .content-container .photo {
+      animation: 0.5s move-left-side ease-out;
+      opacity: 1;
+    }
+    .content-container .text {
+      animation: 0.5s move-right-side ease-out;
+      opacity: 1;
+    }
+  }
   .content-container {
     display: flex;
     align-items: center;
@@ -9,6 +27,7 @@
     .photo {
       position: relative;
       width: 50%;
+      opacity: 0;
 
       &::before {
         border-radius: 15px;
@@ -33,10 +52,12 @@
         position: relative;
       }
     }
+
     .text {
       width: 45%;
       color: var(--paragraph-color);
       line-height: 1.55556;
+      opacity: 0;
       h2 {
         color: var(--heading-color);
         font-weight: 500;

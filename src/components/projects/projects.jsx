@@ -8,6 +8,7 @@ import Bondi from '../../assets/projects/bondi.png'
 import taskat from '../../assets/projects/taskat.png'
 import ehya from '../../assets/projects/ehya.png'
 import './projects.css'
+import Animated from '../animation'
 
 const Projects = () => {
   const projects = [
@@ -76,14 +77,14 @@ const Projects = () => {
     },
   ]
   return (
-    <div className="projects container" id="Projects">
+    <Animated className="projects container" id="Projects">
       <h1 className="color-bg head-section">Featured Projects</h1>
       <p className="details">
         Here are some of my recent projects that showcase my skills in
         full-stack development. Each project demonstrates my ability to build
         modern, scalable applications.
       </p>
-      <div className="cards">
+      <Animated className="cards">
         {projects.map((el, key) => {
           return (
             <div className="card" key={key}>
@@ -111,8 +112,8 @@ const Projects = () => {
             </div>
           )
         })}
-      </div>
-    </div>
+      </Animated>
+    </Animated>
   )
 }
 

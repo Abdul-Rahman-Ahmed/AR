@@ -1,0 +1,76 @@
+@keyframes rot {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+}
+
+@keyframes move-down {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes move-left-side {
+  from {
+    transform: translatex(-40px);
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes move-right-side {
+  from {
+    transform: translatex(40px);
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes skills-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--level);
+  }
+}
+
+.move-down {
+  animation: 0.5s move-down ease-out;
+}

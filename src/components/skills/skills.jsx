@@ -1,4 +1,6 @@
 import './skills.css'
+import Animated from '../animation'
+
 const Skills = () => {
   const skills = [
     { name: 'HTML', level: 95, color: 'oklch(70.5% .213 47.604)' },
@@ -26,7 +28,7 @@ const Skills = () => {
     { name: 'Figma', category: 'Design' },
   ]
   return (
-    <div className="skills container" id="Skills">
+    <Animated className="skills container" id="Skills">
       <h1 className="color-bg head-section">Skills & Expertise</h1>
       <h2>Core Technologies</h2>
       <ul className="skills-list">
@@ -40,7 +42,10 @@ const Skills = () => {
               <div className="linear">
                 <div
                   className="progress"
-                  style={{ backgroundColor: el.color, width: el.level + '%' }}
+                  style={{
+                    '--level': el.level + '%',
+                    backgroundColor: el.color,
+                  }}
                 ></div>
               </div>
             </li>
@@ -48,17 +53,19 @@ const Skills = () => {
         })}
       </ul>
       <h2>Additional Technologies</h2>
-      <ul className="technologies-list">
-        {technologies.map((el, key) => {
-          return (
-            <li key={key}>
-              <h3>{el.name}</h3>
-              <p>{el.category}</p>
-            </li>
-          )
-        })}
-      </ul>
-    </div>
+      <Animated className="technologies">
+        <ul className="technologies-list">
+          {technologies.map((el, key) => {
+            return (
+              <li key={key}>
+                <h3>{el.name}</h3>
+                <p>{el.category}</p>
+              </li>
+            )
+          })}
+        </ul>
+      </Animated>
+    </Animated>
   )
 }
 

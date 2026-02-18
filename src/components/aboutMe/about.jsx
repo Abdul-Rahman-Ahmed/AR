@@ -1,9 +1,10 @@
 import about from '../../assets/about.png'
+import Animated from '../animation'
 import './about.css'
 
 const AboutMe = () => {
   return (
-    <div className="about container" id="About">
+    <Animated className="about container" id="About">
       <h1 className="color-bg head-section">About Me</h1>
       <div className="content-container">
         <div className="photo">
@@ -30,7 +31,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Animated>
   )
 }
 

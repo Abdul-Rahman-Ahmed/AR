@@ -1,6 +1,16 @@
 .projects {
   background-color: var(--stack-bg-color);
 
+  &.show {
+    h1,
+    .details {
+      animation: 0.5s move-down ease-out;
+      opacity: 1;
+    }
+  }
+  h1 {
+    opacity: 0;
+  }
   .details {
     margin: 0 auto 64px;
     text-align: center;
@@ -8,6 +18,7 @@
     font-size: 18px;
     line-height: 1.55556;
     color: var(--paragraph-color);
+    opacity: 0;
     @media (max-width: 768px) {
       max-width: 100%;
     }
@@ -17,14 +28,38 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
-
+    &.show {
+      .card {
+        animation: 0.2s move-down ease-out forwards;
+        &:nth-child(1) {
+          animation-delay: 0.2s;
+        }
+        &:nth-child(2) {
+          animation-delay: 0.4s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.6s;
+        }
+        &:nth-child(4) {
+          animation-delay: 0.8s;
+        }
+        &:nth-child(5) {
+          animation-delay: 1s;
+        }
+        &:nth-child(6) {
+          animation-delay: 1.2s;
+        }
+      }
+    }
     .card {
+      opacity: 0;
       max-width: 470px;
       background-color: var(--bg-color);
       border-radius: 30px;
       transition: 0.3s;
       overflow: hidden;
       margin-bottom: 20px;
+
       &:hover {
         transform: translateY(-10px);
         box-shadow: 0px 10px 10px 0px #1449e64f;

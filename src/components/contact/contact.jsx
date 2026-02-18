@@ -6,10 +6,11 @@ import {
   faPhone,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import Animated from '../animation'
 
 const Contact = () => {
   return (
-    <div className="contact container" id="Contact">
+    <Animated className="contact container" id="Contact">
       <h1 className="color-bg head-section">Get In Touch</h1>
       <p className="details">
         Have a project in mind or want to collaborate? I'd love to hear from
@@ -83,7 +84,7 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </Animated>
   )
 }
 

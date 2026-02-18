@@ -10,10 +10,11 @@ import me from '../../assets/me.jpg'
 const Hero = () => {
   return (
     <section className="hero" id="Home">
-      <div className="photo">
+      <div className="photo move-down">
         <img src={me} alt="me" />
       </div>
-      <div className="content">
+
+      <div className="content move-down">
         <div className="short-head">
           <FontAwesomeIcon className="icon" icon={faStar} />
           Hey There! I'm
@@ -46,6 +47,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
+
       <div className="shape-container">
         <div className="shape"></div>
         <div className="shape"></div>
